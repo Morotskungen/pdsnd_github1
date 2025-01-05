@@ -8,7 +8,10 @@
 This project enables the user to see statistics covering usage patterns of bikesharing in three American cities. Chicago, NYC and Washington.
 
 ### Files used
-Include the files used
+bikeshare.py <br>
+chicago.csv  <br>
+new_york_city.csv  <br>
+washington.csv
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
