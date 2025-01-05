@@ -14,5 +14,5 @@ new_york_city.csv  <br>
 washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Thanks to Motivate, a bike share system provider, that enabled us to use their data.
 
