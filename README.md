@@ -4,9 +4,8 @@
 
 ### Bikeshare project
 
-
 ### Description
-Describe what your project is about and what it does
+This project enables the user to see statistics covering usage patterns of bikesharing in three American cities. Chicago, NYC and Washington.
 
 ### Files used
 Include the files used
