@@ -3,6 +3,7 @@ import time
 import pandas as pd
 import numpy as np
 import calendar
+from tabulate import tabulate
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -37,6 +38,7 @@ city_list = ['chicago', 'nyc', 'washington']
 month_list = [1, 2, 3, 4, 5, 6]
 day_list = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
 choice_list = ['month', 'day', 'none', 'both']
+
 
 
 def user_choice_month():
@@ -93,7 +95,7 @@ def get_filters():
         city = 'new_york_city'
         print(city)
 
-    while loop_active:git stat
+    while loop_active:
         user_choice = input("Would you like to filter by day, month, both or not at all? Enter 'none' for no filter").lower()
         if user_choice in choice_list:
             if user_choice == 'month':
@@ -148,7 +150,7 @@ def station_statistics():
     while raw == 'y':
         raw = input('Would you like to see some raw data(Y/N)?').lower()
         if raw == 'y':
-            print(df_temp.iloc[start:start + 5])
+            print(tabulate(df_temp.iloc[start:start + 5], headers='keys', tablefmt="fancy_grid"))
         else:
             raw == 'n'
         start += 5
