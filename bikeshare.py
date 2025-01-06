@@ -93,7 +93,7 @@ def get_filters():
             print("Invalid city. Please try again!")
     if city == 'nyc':
         city = 'new_york_city'
-        print(city)
+        # print(city)
 
     while loop_active:
         user_choice = input("Would you like to filter by day, month, both or not at all? Enter 'none' for no filter").lower()
@@ -115,7 +115,6 @@ def get_filters():
 
 # Function for statistics
 def station_statistics():
-
     print(f"As requested statistics for {city.capitalize()} will be presented.")
     if month != 'none':
         print(f"The requested month is {calendar.month_name[month]}.")
@@ -140,6 +139,7 @@ def station_statistics():
     print(f"The average travel time is {round(df_temp['Trip Duration'].mean()/60, 0)} minutes.")
     print(f"The counts of each user type is \n{df_temp['User Type'].value_counts()}.")
     print(f"\nThe counts of each gender is \n{df_temp['Gender'].value_counts()}.")
+    # No statistics produced for Washington using date of birth as this data is unavailable from source
     if city != 'washington':
         print(f"The earliest year of birth is {df_temp['Birth Year'].min()}.")
         print(f"The latest year of birth is {df_temp['Birth Year'].max()}.")
